@@ -8,7 +8,7 @@ import os
 # Load Dataset
 def get_clean_data():
     try:
-        df = pd.read_csv("../dataset/clean_data.csv")
+        df = pd.read_csv("dataset/clean_data.csv")
         return df
     except FileNotFoundError:
         st.error("Dataset not found! Please check if 'clean_data.csv' is in the dataset folder.")
@@ -217,4 +217,5 @@ def main():
         add_predictions(input_data)
 
 if __name__ == "__main__":
+
     main()
